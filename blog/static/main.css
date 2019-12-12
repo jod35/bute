@@ -1,0 +1,118 @@
+*{
+    font-family:sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(250, 235, 215, 0.384);
+}
+header h1{
+    color: darkred;
+}
+.others{
+    margin-top: 25px;
+    padding: 5px;
+}
+header a{
+    text-decoration: none;
+    color: darkred;
+    padding-inline: 30px;
+}
+.main-body{
+    min-height: 500px;
+    background-image: url(./Icescape.jpg);
+    min-height: 500px;
+}
+.wel{
+    padding: 50px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+
+}
+.welcome{
+    padding: 100px;
+}
+
+.wel a{
+    padding: 20px;
+    border: 1px solid rgba(250, 235, 215, 0.315);
+    color: antiquewhite;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.wel a:hover{
+    background-color: rgba(250, 235, 215, 0.178);
+    color:antiquewhite;
+    border: 1px solid rgb(250, 235, 215);
+}
+
+footer{
+    color: darkred;
+    background-color: antiquewhite;
+    padding: 30px;
+
+}
+.form{
+    margin: auto;
+    padding: 26px;
+    border-radius: 7px;
+    border: 1px solid antiquewhite;
+    background-color:rgba(250, 235, 215, 0.685);
+    color: darkred;
+}
+
+input{
+    background: rgba(250, 235, 215, 0);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: darkred 2px solid;
+    color: darkred;
+    padding: 3px;
+}
+.form-group{
+    padding: 16px;
+}
+.mybtn{
+    color: darkred;
+    border: 1px solid darkred;
+    padding: 20px;
+    border-radius: 7px;
+}
+.mybtn:hover{
+    color: antiquewhite;
+    background-color: darkred;
+    border: 1px solid darkred;
+
+}
+.form a{
+    color:darkred;
+    border: none;
+}
+.form a:hover{
+    color: darkred;
+    border: none;
+
+}
+select{
+  
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: darkred;
+    background-color: rgba(250, 235, 215, 0.007);
+    border-bottom: darkred 2px solid;
+    padding: 3px;
+    width: 200px;
+}
+
