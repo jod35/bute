@@ -116,3 +116,8 @@ select{
     width: 200px;
 }
 
+.message{
+    color: darkred;
+    border-radius: 1px;
+    border: 1px solid darkred;
+}
