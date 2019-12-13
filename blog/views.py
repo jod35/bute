@@ -10,6 +10,7 @@ def index():
 
 @app.route('/signup',methods=['GET', 'POST'])
 def create_account():
+    
     if request.method=='POST':
         full_name=request.form.get('full_name')
         username=request.form.get('username')
@@ -17,6 +18,20 @@ def create_account():
         email=request.form.get('email')
         password=request.form.get('password')
         confirm=request.form.get('confirm')
+
+        user=User.query.filter_by(username=username)
+
+        email_exists=User.query.filter_by(email=email)
+
+        if password != confirm:
+            flash("Passwords Do not Match")
+            return render_template('sign.html')
+
+        if user or email_exists:
+            flash("Invalid Username or Email")
+            return redirect(url_for('create_account'))
+
+        
 
         new_user=User(
             full_name=full_name,
